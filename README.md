@@ -165,10 +165,10 @@ if __name__ == "__main__":
 Encrypted, timestamped keystroke entries.    
 
 ![image](https://github.com/user-attachments/assets/62caff5a-ddcd-4717-8e44-b33aa052944d)    
-These are encrypted keystroke logs, sent from your keylogger to the local server (localhost:4444).
+These are encrypted keystroke logs, sent from our keylogger to the local server (localhost:4444).
 
 
-### 4. **Decryption Script**
+### 4. **Decryption Script (optional)**
 
 **Filename:** `decrypt_logs.py`    
 **What it does:** Reads `key.key` and `encrypted_log.txt`, decrypts entries, and displays readable logs.
