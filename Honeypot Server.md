@@ -1,4 +1,4 @@
-**4. HoneyPot Server to Detect Attack Patterns**    
+**14. HoneyPot Server to Detect Attack Patterns**    
 
 **Objective:** Deploy a honeypot to simulate vulnerable services and log attackers.      
 **Tools:** Cowrie or custom Python scripts, SSH/FTP emulation   
