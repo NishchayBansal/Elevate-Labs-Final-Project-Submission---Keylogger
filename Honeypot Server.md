@@ -1,15 +1,16 @@
-**4. HoneyPot Server to Detect Attack Patterns**
-Objective: Deploy a honeypot to simulate vulnerable services and log attackers.  
-Tools: Cowrie or custom Python scripts, SSH/FTP emulation   
-Mini Guide:  
+**4. HoneyPot Server to Detect Attack Patterns**    
+
+**Objective:** Deploy a honeypot to simulate vulnerable services and log attackers.      
+**Tools:** Cowrie or custom Python scripts, SSH/FTP emulation   
+**Mini Guide:**  
 a. Deploy honeypot on a VM.  
 b. Log connections, IPs, attempted commands.  
 c. Analyze log files for repeated attempts.  
 d. Use fail2ban to block real threats.  
 e. Visualize IP geolocation of attackers.  
-Deliverables: Running honeypot + detailed logs + visual attack reports.
+**Deliverables:** Running honeypot + detailed logs + visual attack reports.
 
-### ✅ Honeypot Server
+### Honeypot Server
 ```python
 import socket
 import threading
@@ -109,7 +110,7 @@ if __name__ == "__main__":
 
 ---
 
-## ✅ What It Does:
+## What It Does:
 
 | Feature                       | Description                       |
 | ----------------------------- | --------------------------------- |
@@ -117,7 +118,7 @@ if __name__ == "__main__":
 | Logs all data                 | IP, timestamp, username, password |
 | Geolocation via `ip-api.com`  | Logs country, city, org, etc.     |
 | Repeated attempts detection   | Flags IPs after 5 tries           |
-| Fail2ban integration (manual) | Option to block IP                |
+**ADD-ON:**
 | JSON + text logging           | For analysis or visualization     |
 
 ---
@@ -130,23 +131,17 @@ pip install requests
 
 ---
 
-## 📊 Bonus: Visualization Script
-
-Want to visualize attacks on a map?
+## (Add-on) Visualization Script
 
 1. Use tools like **Kibana**, **Grafana**, or Python libraries like `folium` or `matplotlib`.
-2. I can help generate a **map of IP attacks** using `folium` (Python leaflet map).
 
 ---
 
-## 🧩 Additional Features You Can Add:
+## Additional Features You Can Add:
 
-* Honeypot Web GUI Dashboard (Flask)
 * E-mail alerts for high-risk IPs
-* Export logs to CSV
 * Auto-ban using firewall rules
-* Brute-force pattern detection
+* Honeypot Web GUI Dashboard (Flask)
+* Export logs to CSV
 
 ---
-
-Would you like me to generate the **attack heatmap visualization** or the **report format** now?
