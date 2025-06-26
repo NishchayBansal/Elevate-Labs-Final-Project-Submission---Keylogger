@@ -1,14 +1,22 @@
 # Elevate-Labs-Final-Project-Submission---Keylogger
 
 Keylogger with Encrypted Data Exfiltration
+
 Objective: Build a proof-of-concept keylogger that encrypts logs and simulates exfiltration.
+
 Tools: Python, pynput, cryptography, base64
+
 Mini Guide:
 a. Capture keystrokes using pynput.
+
 b. Encrypt data using cryptography.fernet.
+
 c. Store logs locally with timestamp.
+
 d. Simulate sending to a remote server (localhost).
+
 e. Add startup persistence and kill switch.
+
 Deliverables: Encrypted keylogger PoC with ethical constraints and logs.
 
 ![image](https://github.com/user-attachments/assets/9eddcf20-65db-4d5b-a457-fb6a1ee65073)
@@ -36,6 +44,7 @@ Deliverables: Encrypted keylogger PoC with ethical constraints and logs.
 ### 2. **Generated Key File**
 
 **Filename:** `key.key`
+
 **Purpose:** Stores the Fernet symmetric encryption key.
 
 ### 3. ✅ **Encrypted Log File**
@@ -48,7 +57,7 @@ Encrypted, timestamped keystroke entries.
 These are encrypted keystroke logs, sent from your keylogger to the local server (localhost:4444).
 
 
-### 4. ✅ **Decryption Script (Optional but Recommended)**
+### 4. **Decryption Script (Optional but Recommended)**
 
 **Filename:** `decrypt_logs.py`
 **What it does:** Reads `key.key` and `encrypted_log.txt`, decrypts entries, and displays readable logs.
@@ -69,8 +78,5 @@ with open("encrypted_log.txt", "rb") as log_file:
         except Exception as e:
             print(f"Failed to decrypt: {e}")
 ```
-
----
-
 
 
